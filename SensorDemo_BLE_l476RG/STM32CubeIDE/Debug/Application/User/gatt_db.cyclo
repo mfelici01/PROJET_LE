@@ -1,0 +1,6 @@
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:72:12:Add_HWServW2ST_Service	4
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:123:12:Add_SWServW2ST_Service	3
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:166:12:Acc_Update	2
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:200:12:Quat_Update	2
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:251:6:Read_Request_CB	4
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:277:12:Environmental_Update	2

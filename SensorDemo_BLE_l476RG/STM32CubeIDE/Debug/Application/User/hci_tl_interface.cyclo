@@ -1,0 +1,10 @@
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:49:13:HCI_TL_SPI_Enable_IRQ	1
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:59:13:HCI_TL_SPI_Disable_IRQ	1
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:71:9:HCI_TL_SPI_Init	1
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:109:9:HCI_TL_SPI_DeInit	1
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:123:9:HCI_TL_SPI_Reset	1
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:142:9:HCI_TL_SPI_Receive	4
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:194:9:HCI_TL_SPI_Send	7
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:272:16:IsDataAvailable	1
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:284:6:hci_tl_lowlevel_init	1
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/hci_tl_interface.c:323:6:hci_tl_lowlevel_isr	3
