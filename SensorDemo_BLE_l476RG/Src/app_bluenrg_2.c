@@ -78,7 +78,7 @@ static uint8_t Sensor_DeviceInit(void);
 static void Set_Random_Environmental_Values(float *data_t, float *data_p);
 static void Set_Random_Motion_Values(uint32_t cnt);
 static void Reset_Motion_Values(void);
-void read_temperature_and_pression(float *data_t, float *data_p);
+void read_temperature_and_pression(float *data_t, float *data_p , float *data_h);
 static int32_t platform_write(void *handle, uint8_t reg, const uint8_t *bufp,
                               uint16_t len);
 static int32_t platform_read(void *handle, uint8_t reg, uint8_t *bufp,
@@ -409,6 +409,7 @@ static void User_Process(void)
 {
   float data_t;
   float data_p;
+  float data_h;
   static uint32_t counter = 0;
 
   /* Make the device discoverable */
@@ -440,10 +441,10 @@ static void User_Process(void)
       /* Set a random seed */
       srand(HAL_GetTick());
 
-      read_temperature_and_pression(&data_t, &data_p);
+      read_temperature_and_pression(&data_t, &data_p ,&data_h);
       /* Update emulated Environmental data */
       //Set_Random_Environmental_Values(&data_t, &data_p);
-      Environmental_Update((int32_t)(data_p *100), (int16_t)(data_t * 10));
+      Environmental_Update((int32_t)(data_p *100), (int16_t)(data_t * 10), (int16_t)(data_h * 10));
 
       /* Update emulated Acceleration, Gyroscope and Sensor Fusion data */
       Set_Random_Motion_Values(counter);
@@ -479,7 +480,7 @@ static void Set_Random_Environmental_Values(float *data_t, float *data_p)
   *data_p = 1000.0 + ((uint64_t)rand()*80)/RAND_MAX; /* P sensor emulation */
 }
 
-void read_temperature_and_pression(float *data_t, float *data_p)
+void read_temperature_and_pression(float *data_t, float *data_p, float *data_h)
 {
   hts221_reg_t reg;
   hts221_status_get(&dev_ctx, &reg.status_reg);
@@ -502,6 +503,7 @@ void read_temperature_and_pression(float *data_t, float *data_p)
     HAL_UART_Transmit(&huart2, tx_buffer, strlen((char const *)tx_buffer), 1000);
 
   }
+  *data_h=humidity_perc;
 
   if (reg.status_reg.t_da) {
     /* Read temperature data */

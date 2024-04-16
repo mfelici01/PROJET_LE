@@ -1,6 +1,6 @@
 C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:72:12:Add_HWServW2ST_Service	64	static
-C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:123:12:Add_SWServW2ST_Service	64	static
-C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:166:12:Acc_Update	56	static
-C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:200:12:Quat_Update	40	static
-C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:251:6:Read_Request_CB	88	static
-C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:277:12:Environmental_Update	40	static
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:124:12:Add_SWServW2ST_Service	64	static
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:167:12:Acc_Update	56	static
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:201:12:Quat_Update	40	static
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:252:6:Read_Request_CB	88	static
+C:/Users/taouf/OneDrive/Documents/LE/Test/SensorDemo_BLE_l476RG/Src/gatt_db.c:279:12:Environmental_Update	40	static
